@@ -1,0 +1,157 @@
+# 🧪 Base2 QA Engineer Roadmap
+
+> **Idealizado pelo Time de Arquitetura da Base2 Tecnologia**  
+> Um guia completo e interativo para evoluir sua carreira em Qualidade de Software — de Júnior a Sênior.
+
+---
+
+## 📖 Sobre o projeto
+
+Este roadmap foi construído com o objetivo de auxiliar profissionais de QA a evoluírem em suas carreiras, pensando nas melhores práticas do mercado. É um documento HTML standalone — sem dependências externas de servidor — que pode ser aberto diretamente no browser ou hospedado em qualquer serviço de páginas estáticas (GitHub Pages, Netlify, Vercel).
+
+O conteúdo é baseado no [roadmap.sh/qa](https://roadmap.sh/qa) e foi significativamente expandido e adaptado pelo Time de Arquitetura da Base2, com foco na realidade do mercado brasileiro.
+
+---
+
+## 🗂️ Estrutura do Roadmap
+
+O roadmap é dividido em **3 trilhas independentes**, cada uma com conteúdo, laboratórios e recursos específicos para o nível:
+
+### 🟢 Trilha Júnior — Fundamentos
+Para quem está começando. Sem pré-requisitos técnicos, com foco em construir a base sólida.
+
+| Módulo | Conteúdo |
+|--------|----------|
+| O que é QA? | Mindset, verificação vs. validação, pirâmide de testes |
+| Abordagens de Teste | Caixa preta, caixa branca, caixa cinza |
+| Testes Manuais | Casos de teste, DevTools, compatibilidade de browsers |
+| Metodologias Ágeis | Scrum, critérios de aceitação, BDD |
+| Técnicas de Teste | Partição de equivalência, análise de valor limite |
+| Git e Versionamento | Comandos essenciais, GitHub para QA |
+| Teste Exploratório | Charter, heurísticas, sessões guiadas |
+| Gestão de Bugs | Jira, MeloQA, anatomia de um bug report |
+| SQL para QA | Validação de dados no banco, massa de dados |
+| HTTP para QA | Status codes, métodos, headers, autenticação |
+| Portfólio e Carreira | GitHub, certificações, comunidade |
+| 🧠 Mentalidade QA | Papel no time, qualidade desde a análise |
+
+### 🟠 Trilha Pleno — Automação
+Para quem já tem a base e quer dominar automação, APIs e CI/CD.
+
+| Módulo | Conteúdo |
+|--------|----------|
+| Automação Frontend | Cypress, Playwright, Selenium WebDriver |
+| Automação de API | Postman, REST Assured, contract testing |
+| Estratégias de Teste | Smoke, regressão, técnicas avançadas |
+| Acessibilidade | WCAG 2.1, axe-core, testes com leitor de tela |
+| CI/CD e Pipelines | GitHub Actions, Docker headless, relatórios |
+| TestRail e Gestão | Ciclos de teste, planos, MeloQA |
+| Monitoramento | Allure Reports, Grafana, Sentry |
+| IA para Produtividade | LLMs, Applitools, GitHub Copilot |
+| Automação Mobile | Appium, Espresso |
+| Contract Testing | Pact, consumer-driven contracts, Pact Broker |
+| Service Virtualization | WireMock, MockServer, MSW |
+| Feature Flags | LaunchDarkly, Unleash, canary releases |
+| BDD e Cucumber | Feature files, step definitions, hooks |
+| Testes de Componente | React Testing Library, jest-axe |
+| Secrets e Ambientes | .env, GitHub Secrets, múltiplos ambientes |
+| 🧠 Mentalidade QA | Shift-left, pipeline de qualidade, observabilidade |
+
+### 🟣 Trilha Sênior — Arquitetura
+Para QAs experientes que querem impactar estratégia, escala e liderança.
+
+| Módulo | Conteúdo |
+|--------|----------|
+| Arquitetura de Testes | Métricas, gestão de risco, TDD/BDD avançado |
+| Performance e Carga | K6, estratégia de SLOs, análise de gargalos |
+| Segurança | OWASP Top 10, SAST/DAST, security no pipeline |
+| Mobile Avançado | Appium avançado, Detox, cloud device testing |
+| Observabilidade | Prometheus, Grafana, SLOs, root cause analysis |
+| IA e Agentes | Self-healing, agentes autônomos, AI Red Teaming |
+| Liderança Técnica | Mentoria, certificações, comunicação com stakeholders |
+| SAFe e Escala | Qualidade em múltiplos times, DevOps, XP |
+| Qualidade no SDLC | Three Amigos, design for testability, shift-right |
+| Chaos Engineering | Litmus, Game Days, chaos no CI/CD |
+| TestOps e QAOps | Ambientes efêmeros, TDM, sharding |
+| Compliance | LGPD, PCI-DSS, audit trail |
+| Microsserviços | Kafka, Testcontainers, distributed tracing |
+| Data Literacy | Pareto de defeitos, dashboards, predictive analytics |
+| Quality Engineering | QE vs. QA, DORA metrics, influência sem autoridade |
+| FinOps de Testes | Custo de CI, otimização de pipeline, ROI |
+| 🧠 Mentalidade QA | Cultura de qualidade, qualidade de ponta a ponta |
+
+---
+
+## 📊 Números do Roadmap
+
+| Indicador | Total |
+|-----------|-------|
+| Trilhas | 3 |
+| Módulos | 48 |
+| Cards de conteúdo | 157 |
+| Laboratórios práticos | 96 |
+| Artigos referenciados | 134 |
+| Recursos em 🇧🇷 português | 179+ |
+
+---
+
+## 🚀 Como usar
+
+Acesse: https://malourencobase2.github.io/qaroadmap/
+
+---
+
+## 🧩 Funcionalidades
+
+- **Página inicial interativa** com seleção de trilha por nível
+- **Sidebar dinâmica** que muda conforme a trilha escolhida
+- **Banner Base2** fixo no topo em todas as páginas
+- **Botão Início** para retornar à página de seleção de trilha
+- **Navegação suave** entre módulos com scroll automático
+- **Responsivo** para mobile e desktop
+- **Standalone** — um único arquivo HTML sem dependências externas de servidor
+
+---
+
+## 🛠️ Tecnologias
+
+O roadmap é um arquivo HTML único (`base2-qa-roadmap.html`) sem dependências externas de servidor. Utiliza:
+
+- **HTML5 + CSS3** — layout com CSS Grid e Flexbox
+- **JavaScript vanilla** — navegação entre seções e trilhas
+- **Google Fonts** — Sora (títulos) e Inter (corpo), carregadas via CDN
+- **Banner** embutido como base64 — sem dependência de arquivos externos
+
+---
+
+## 📚 Referências e Inspirações
+
+- [roadmap.sh/qa](https://roadmap.sh/qa) — estrutura base do roadmap
+- [BSTQB](https://bstqb.org.br) — certificações e syllabus em português
+- [Ministry of Testing](https://www.ministryoftesting.com) — comunidade global de QA
+- [Test Automation University](https://testautomationu.applitools.com) — cursos gratuitos
+- [MeloQA](https://www.meloqa.com) — plataforma brasileira de gestão de testes
+- [Iterasys](https://www.youtube.com/@IterasysEscola) — conteúdo em português
+
+---
+
+## 🤝 Contribuindo
+
+Este roadmap é um documento vivo. Sugestões de conteúdo, correções e melhorias são bem-vindas:
+
+1. Abra uma **Issue** descrevendo a sugestão ou problema
+2. Faça um **Fork** e envie um **Pull Request** com a melhoria
+3. Para sugestões de novos módulos, descreva: público-alvo, conteúdo proposto e por que é relevante para o mercado brasileiro
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido pelo **Time de Arquitetura da Base2 Tecnologia** e é disponibilizado para uso interno e pela comunidade de QA.
+
+---
+
+<div align="center">
+  <strong>Base2 Tecnologia</strong> · Qualidade que destrava o crescimento.<br>
+  <a href="https://www.base2.com.br">base2.com.br</a>
+</div>
