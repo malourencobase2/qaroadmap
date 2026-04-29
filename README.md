@@ -13,6 +13,12 @@ O conteúdo é baseado no [roadmap.sh/qa](https://roadmap.sh/qa) e foi significa
 
 ---
 
+## 🔐 Acesso
+
+O roadmap possui autenticação por e-mail corporativo. Ao acessar, é necessário informar um e-mail com domínio `@base2.com.br`. A sessão é mantida por **7 dias** via `sessionStorage`.
+
+---
+
 ## 🗂️ Estrutura do Roadmap
 
 O roadmap é dividido em **3 trilhas independentes**, cada uma com conteúdo, laboratórios e recursos específicos para o nível:
@@ -20,10 +26,12 @@ O roadmap é dividido em **3 trilhas independentes**, cada uma com conteúdo, la
 ### 🟢 Trilha Júnior — Fundamentos
 Para quem está começando. Sem pré-requisitos técnicos, com foco em construir a base sólida.
 
+**9 módulos · 25+ exercícios · 15+ recursos · 4 labs guiados**
+
 | Módulo | Conteúdo |
 |--------|----------|
 | O que é QA? | Mindset, verificação vs. validação, pirâmide de testes |
-| Abordagens de Teste | Caixa preta, caixa branca, caixa cinza |
+| Tipos e Abordagens de Teste | Caixa preta, caixa branca, caixa cinza |
 | Testes Manuais | Casos de teste, DevTools, compatibilidade de browsers |
 | Metodologias Ágeis | Scrum, critérios de aceitação, BDD |
 | Técnicas de Teste | Partição de equivalência, análise de valor limite |
@@ -33,32 +41,32 @@ Para quem está começando. Sem pré-requisitos técnicos, com foco em construir
 | SQL para QA | Validação de dados no banco, massa de dados |
 | HTTP para QA | Status codes, métodos, headers, autenticação |
 | Portfólio e Carreira | GitHub, certificações, comunidade |
+| Intro à Automação | Primeiros passos com automação de testes |
 | 🧠 Mentalidade QA | Papel no time, qualidade desde a análise |
 
 ### 🟠 Trilha Pleno — Automação
 Para quem já tem a base e quer dominar automação, APIs e CI/CD.
 
+**12 módulos · 35+ exercícios · 20+ recursos · 9 labs com código**
+
 | Módulo | Conteúdo |
 |--------|----------|
-| Automação Frontend | Cypress, Playwright, Selenium WebDriver |
-| Automação de API | Postman, REST Assured, contract testing |
-| Estratégias de Teste | Smoke, regressão, técnicas avançadas |
+| Automação | Cypress, Playwright, Selenium WebDriver |
+| Tipos de Teste | Smoke, regressão, testes de componente |
+| Estratégias de Teste | Técnicas avançadas e pirâmide de automação |
 | Acessibilidade | WCAG 2.1, axe-core, testes com leitor de tela |
 | CI/CD e Pipelines | GitHub Actions, Docker headless, relatórios |
 | TestRail e Gestão | Ciclos de teste, planos, MeloQA |
 | Monitoramento | Allure Reports, Grafana, Sentry |
 | IA para Produtividade | LLMs, Applitools, GitHub Copilot |
-| Automação Mobile | Appium, Espresso |
-| Contract Testing | Pact, consumer-driven contracts, Pact Broker |
-| Service Virtualization | WireMock, MockServer, MSW |
 | Feature Flags | LaunchDarkly, Unleash, canary releases |
-| BDD e Cucumber | Feature files, step definitions, hooks |
-| Testes de Componente | React Testing Library, jest-axe |
 | Secrets e Ambientes | .env, GitHub Secrets, múltiplos ambientes |
 | 🧠 Mentalidade QA | Shift-left, pipeline de qualidade, observabilidade |
 
 ### 🟣 Trilha Sênior — Arquitetura
 Para QAs experientes que querem impactar estratégia, escala e liderança.
+
+**14 módulos · 35+ exercícios · 20+ recursos · 8 labs avançados**
 
 | Módulo | Conteúdo |
 |--------|----------|
@@ -73,8 +81,8 @@ Para QAs experientes que querem impactar estratégia, escala e liderança.
 | Qualidade no SDLC | Three Amigos, design for testability, shift-right |
 | Chaos Engineering | Litmus, Game Days, chaos no CI/CD |
 | TestOps e QAOps | Ambientes efêmeros, TDM, sharding |
-| Compliance | LGPD, PCI-DSS, audit trail |
-| Microsserviços | Kafka, Testcontainers, distributed tracing |
+| Compliance e Regulatório | LGPD, PCI-DSS, audit trail |
+| Microsserviços e Eventos | Kafka, Testcontainers, distributed tracing |
 | Data Literacy | Pareto de defeitos, dashboards, predictive analytics |
 | Quality Engineering | QE vs. QA, DORA metrics, influência sem autoridade |
 | FinOps de Testes | Custo de CI, otimização de pipeline, ROI |
@@ -87,11 +95,11 @@ Para QAs experientes que querem impactar estratégia, escala e liderança.
 | Indicador | Total |
 |-----------|-------|
 | Trilhas | 3 |
-| Módulos | 48 |
-| Cards de conteúdo | 157 |
-| Laboratórios práticos | 96 |
-| Artigos referenciados | 134 |
-| Recursos em 🇧🇷 português | 179+ |
+| Módulos (conteúdo) | 38 |
+| Laboratórios práticos | 135 |
+| Links de recursos | 464 |
+| Artigos referenciados | 147 |
+| Recursos em 🇧🇷 português | 194+ |
 
 ---
 
@@ -99,15 +107,18 @@ Para QAs experientes que querem impactar estratégia, escala e liderança.
 
 Acesse: https://malourencobase2.github.io/qaroadmap/
 
+> ⚠️ O acesso requer e-mail com domínio `@base2.com.br`.
+
 ---
 
 ## 🧩 Funcionalidades
 
+- **Tela de login** com autenticação por e-mail corporativo (`@base2.com.br`), sessão de 7 dias
 - **Página inicial interativa** com seleção de trilha por nível
 - **Sidebar dinâmica** que muda conforme a trilha escolhida
-- **Banner Base2** fixo no topo em todas as páginas
-- **Botão Início** para retornar à página de seleção de trilha
+- **Topbar** com botão de retorno ao início e indicador do nível atual
 - **Navegação suave** entre módulos com scroll automático
+- **Tabs de automação** para alternar entre frameworks (ex.: Cypress, Playwright, Selenium)
 - **Responsivo** para mobile e desktop
 - **Standalone** — um único arquivo HTML sem dependências externas de servidor
 
@@ -115,12 +126,12 @@ Acesse: https://malourencobase2.github.io/qaroadmap/
 
 ## 🛠️ Tecnologias
 
-O roadmap é um arquivo HTML único (`base2-qa-roadmap.html`) sem dependências externas de servidor. Utiliza:
+O roadmap é um arquivo HTML único (`index.html`) sem dependências externas de servidor. Utiliza:
 
 - **HTML5 + CSS3** — layout com CSS Grid e Flexbox
-- **JavaScript vanilla** — navegação entre seções e trilhas
+- **JavaScript vanilla** — navegação entre seções, trilhas e autenticação
 - **Google Fonts** — Sora (títulos) e Inter (corpo), carregadas via CDN
-- **Banner** embutido como base64 — sem dependência de arquivos externos
+- **sessionStorage** — controle de sessão de autenticação (7 dias)
 
 ---
 
